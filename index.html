@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rekrutacja</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row logo"><img src="./images/logo.png" alt="logo"></div>
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#" data-toggle="modal" data-target="#home"><img
+                    src="./images/menu_home.png"></a>
+            <a class="navbar-brand" href="#" data-toggle="modal" data-target="#gallery"><img
+                    src="./images/menu_gallery.png"></a>
+            <a class="navbar-brand" href="#" data-toggle="modal" data-target="#store"><img
+                    src="./images/menu_store.png"></a>
+            <a class="navbar-brand" href="#" data-toggle="modal" data-target="#contact" data-whatever="@mdo"><img
+                    src="./images/menu_contact.png"></a>
+            <a class="navbar-brand" href="#"><img src="./images/menu_line.png"></a>
+            <a class="navbar-brand" href="#"><img src="./images/instagram.png"></a>
+            <a class="navbar-brand" href="#"><img src="./images/facebook.png"></a>
+            <a class="navbar-brand" href="#"><img src="./images/twitter.png"></a>
+            <a class="navbar-brand" href="#"><img src="./images/whatsApp.png"></a>
+        </nav>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <div>
+                            <h1>Limitless</h1>
+                        </div>
+                        <div class="carousel-caption--block">
+                            <button class="caption--block__btn">More</button>
+                            <div>
+                                <h5>Your project</h5>
+                                <p>Sit labore sunt enim occaecat reprehenderit tempor adipisicing esse aute ex et.
+                                    Fugiat veniam laboris voluptate duis culpa. Mollit ex sit magna velit nostrud
+                                    officia irure Lorem. Nisi exercitation laboris enim officia aliqua. Velit magna
+                                    laborum mollit amet. Tempor nulla sit ex eiusmod adipisicing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <div>
+                            <h1>Limitless</h1>
+                        </div>
+                        <div class="carousel-caption--block">
+                            <button class="caption--block__btn">More</button>
+                            <div>
+                                <h5>Your project</h5>
+                                <p>Sit labore sunt enim occaecat reprehenderit tempor adipisicing esse aute ex et.
+                                    Fugiat veniam laboris voluptate duis culpa. Mollit ex sit magna velit nostrud
+                                    officia irure Lorem. Nisi exercitation laboris enim officia aliqua. Velit magna
+                                    laborum mollit amet. Tempor nulla sit ex eiusmod adipisicing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- bootstrap modals -->
+    <div class="modal fade" id="home" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Hello world!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="gallery" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">.col-md-4</div>
+                            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+                            <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                Level 1: .col-sm-9
+                                <div class="row">
+                                    <div class="col-8 col-sm-6">
+                                        Level 2: .col-8 .col-sm-6
+                                    </div>
+                                    <div class="col-4 col-sm-6">
+                                        Level 2: .col-4 .col-sm-6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="store" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Popover in a modal</h5>
+                    <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title"
+                            data-content="Popover body content is set in this attribute.">button</a> triggers a popover
+                        on click.</p>
+                    <hr>
+                    <h5>Tooltips in a modal</h5>
+                    <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#"
+                            class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+.container-fluid {
+  padding: 0 !important;
+  .logo {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 2;
+    img {
+      max-width: 100px;
+    }
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    max-width: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    a {
+      margin: 0;
+      img {
+        display: block;
+        height: auto;
+        max-height: 150px;
+        max-width: 30px;
+      }
+    }
+  }
+  .carousel-indicators {
+    top: 15px;
+    li {
+      background: transparent;
+      border: 2px solid #da0080;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+      &.active {
+        background: #da0080;
+      }
+    }
+  }
+
+  .carousel-inner {
+    .carousel-item {
+      background: url("./images/background.png") center no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    .carousel-caption {
+      bottom: 20%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 1024px;
+
+      h1,
+      h5,
+      button {
+        text-transform: uppercase;
+      }
+
+      h5,
+      p {
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 150px;
+        opacity: 0.4;
+        color: #fff;
+        width: auto;
+        display: inline-block;
+      }
+
+      h5 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      p {
+        display: inline-block;
+        font-size: 12px;
+        max-width: 300px;
+      }
+
+      .carousel-caption--block {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 766px;
+        padding-top: 20px;
+        width: 100%;
+      }
+
+      .caption--block__btn {
+        background: transparent;
+        box-sizing: border-box;
+        border: 2px solid #da0080;
+        border-radius: 2px;
+        color: #fff;
+        font-weight: bold;
+        line-height: 25px;
+        margin-left: 10px;
+        max-height: 50px;
+        padding: 10px 40px;
+      }
+
+      @media all and (max-width: 1240px) {
+        bottom: 5%;
+        width: auto;
+        h1 {
+          font-size: 36px;
+        }
+
+        .carousel-caption--block {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h5,
+          p {
+            text-align: center;
+          }
+          h5 {
+            padding-top: 20px;
+          }
+          .caption--block__btn {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    &:before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      border: 2px solid #fff;
+      padding: 12px 22px;
+      border-radius: 50%;
+      position: relative;
+      left: -12px;
+    }
+  }
+}

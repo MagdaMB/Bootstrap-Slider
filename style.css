@@ -1,0 +1,181 @@
+.container-fluid {
+  padding: 0 !important;
+}
+
+.container-fluid .logo {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 2;
+}
+
+.container-fluid .logo img {
+  max-width: 100px;
+}
+
+.container-fluid .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  max-width: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.container-fluid .navbar a {
+  margin: 0;
+}
+
+.container-fluid .navbar a img {
+  display: block;
+  height: auto;
+  max-height: 150px;
+  max-width: 30px;
+}
+
+.container-fluid .carousel-indicators {
+  top: 15px;
+}
+
+.container-fluid .carousel-indicators li {
+  background: transparent;
+  border: 2px solid #da0080;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.container-fluid .carousel-indicators li.active {
+  background: #da0080;
+}
+
+.container-fluid .carousel-inner .carousel-item {
+  background: url("./images/background.png") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container-fluid .carousel-inner .carousel-caption {
+  bottom: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.container-fluid .carousel-inner .carousel-caption h1,
+.container-fluid .carousel-inner .carousel-caption h5,
+.container-fluid .carousel-inner .carousel-caption button {
+  text-transform: uppercase;
+}
+
+.container-fluid .carousel-inner .carousel-caption h5,
+.container-fluid .carousel-inner .carousel-caption p {
+  text-align: left;
+}
+
+.container-fluid .carousel-inner .carousel-caption h1 {
+  font-size: 150px;
+  opacity: 0.4;
+  color: #fff;
+  width: auto;
+  display: inline-block;
+}
+
+.container-fluid .carousel-inner .carousel-caption h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container-fluid .carousel-inner .carousel-caption p {
+  display: inline-block;
+  font-size: 12px;
+  max-width: 300px;
+}
+
+.container-fluid .carousel-inner .carousel-caption .carousel-caption--block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 766px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.container-fluid .carousel-inner .carousel-caption .caption--block__btn {
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #da0080;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 25px;
+  margin-left: 10px;
+  max-height: 50px;
+  padding: 10px 40px;
+}
+
+@media all and (max-width: 1240px) {
+  .container-fluid .carousel-inner .carousel-caption {
+    bottom: 5%;
+    width: auto;
+  }
+  .container-fluid .carousel-inner .carousel-caption h1 {
+    font-size: 36px;
+  }
+  .container-fluid .carousel-inner .carousel-caption .carousel-caption--block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-fluid .carousel-inner .carousel-caption .carousel-caption--block h5,
+  .container-fluid .carousel-inner .carousel-caption .carousel-caption--block p {
+    text-align: center;
+  }
+  .container-fluid .carousel-inner .carousel-caption .carousel-caption--block h5 {
+    padding-top: 20px;
+  }
+  .container-fluid .carousel-inner .carousel-caption .carousel-caption--block .caption--block__btn {
+    margin: 0;
+  }
+}
+
+.container-fluid .carousel-control-prev-icon:before,
+.container-fluid .carousel-control-next-icon:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  padding: 12px 22px;
+  border-radius: 50%;
+  position: relative;
+  left: -12px;
+}
+/*# sourceMappingURL=style.css.map */
